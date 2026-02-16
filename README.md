@@ -15,11 +15,12 @@ A lightweight Dockerized environment for **Mobile Atlas Creator (MOBAC)** access
 
 ## Quick Start
 
-1. Clone the repository:
-2. Build the image:
+1. Clone the repository or download Dockerfile
+2. Download latest MOBAC file from https://sourceforge.net/projects/mobac/ and save it mobac.zip
+3. Build the image:
    ```bash
    docker build -t mobac-novnc .
-3. Run the container:
+4. Run the container:
    Replace C:/MappeMobac with your actual local path and change port 8088 if you need
    ```bash
    docker run -d \
@@ -28,7 +29,7 @@ A lightweight Dockerized environment for **Mobile Atlas Creator (MOBAC)** access
    -v "C:/MappeMobac/atlases:/opt/mobac/atlases" \
    -v "C:/MappeMobac/mapsources:/opt/mobac/mapsources" \
      mobac-novnc
-4. Open in Browser:
+5. Open in Browser:
 Navigate to: http://localhost:8088/vnc.html
 
 Configuration
