@@ -33,19 +33,9 @@ A lightweight Dockerized environment for **Mobile Atlas Creator (MOBAC)** access
 Navigate to: http://localhost:8088/vnc.html
 
 Configuration
+Port: Change the host port in the docker run command (e.g., -p 9000:8088).
 
-    Port: Change the host port in the docker run command (e.g., -p 9000:8088).
-
-    Map Sources: Add your custom .xml maps to the local mapsources folder and restart the container.
+Map Sources: 
+Add your custom .xml maps to the local mapsources folder and reload sources or restart container
    ```bash
     docker cp pathtoyourfile.xml mobac-container:/opt/mobac/mapsources/    
-
-Troubleshooting
-
-If you see The connection was reset or ERR_EMPTY_RESPONSE:
-
-    Ensure the container is running: docker ps.
-
-    Check logs: docker logs mobac-container.
-
-    Verify the port isn't blocked by your firewall.
