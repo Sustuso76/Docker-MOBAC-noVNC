@@ -16,8 +16,9 @@ A lightweight Dockerized environment for **Mobile Atlas Creator (MOBAC)** access
 ## Quick Start
 
 1. Clone the repository or download Dockerfile
-'''bash
- git clone https://github.com/Sustuso76/Docker-MOBAC-noVNC.git
+  ```bash
+  git clone https://github.com/Sustuso76/Docker-MOBAC-noVNC.git
+  ```
 3. Download latest MOBAC file from https://sourceforge.net/projects/mobac/ and save it mobac.zip
 4. Build the image:
    ```bash
